@@ -166,3 +166,11 @@ nav button.active {
     color: #8B0000;
     margin-bottom: 15px;
 }
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}

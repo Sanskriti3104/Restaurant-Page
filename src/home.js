@@ -1,6 +1,11 @@
 // Select the parent container by ID
 const content = document.querySelector("#content");
 
+const home = document.createElement("div");
+home.classList.add("home");
+home.classList.add("tab-content");
+home.classList.add("active");
+
 // --- HOME DISPLAY SECTION ---
 const homeDisplay = document.createElement("div");
 homeDisplay.classList.add("home-display");
@@ -117,5 +122,7 @@ homeContent.appendChild(homeDescription);
 homeContent.appendChild(features);
 
 // --- Append everything into content container ---
-content.appendChild(homeDisplay);
-content.appendChild(homeContent);
+home.appendChild(homeDisplay);
+home.appendChild(homeContent);
+
+content.appendChild(home);
