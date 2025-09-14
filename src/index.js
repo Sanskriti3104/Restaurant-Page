@@ -1,8 +1,10 @@
+// importing files
 import './home.js';
 import './menu.js';
 import './about.js'
 import './style.css';
 
+//importing images
 import homeImage from './images/home.jpg';
 document.getElementById('homeImage').src = homeImage;
 
@@ -23,6 +25,8 @@ document.getElementById('PenneAlfredo').src = PenneAlfredo;
 
 import LasagnaAlForno from './images/pexels-shameel-mukkath-3421394-5640052.jpg';
 document.getElementById('LasagnaAlForno').src = LasagnaAlForno;
+
+// Tab switching logic
 const navBtns = document.querySelectorAll('.nav-btn');
 const tabContents = document.querySelectorAll('.tab-content');
 
